@@ -4,6 +4,12 @@
 /* Fontawesome */
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
+@import url("components/container.css");
+@import url("components/button.css");
+@import url("components/cards.css");
+@import url("components/banner.css");
+@import url("components/footer.css");
+
 /* Utilities */
 body {
   margin: 0;
@@ -20,3 +26,33 @@ a {
 
 /* Custom design below! */
 
+.text-center {
+  text-align: center;
+}
+
+.banner {
+  background-image: url(../images/biltoki-bacalan.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 180px 0;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
